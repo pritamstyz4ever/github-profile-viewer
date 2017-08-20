@@ -4,6 +4,8 @@ React Native App to Search and View Github profiles, repositories and take notes
 
 #Start App :
 
-react-native init github-profile-viewer
-react-native run-ios
-react-native run-android
+> react-native init github-profile-viewer
+
+>react-native run-ios
+
+>react-native run-android
