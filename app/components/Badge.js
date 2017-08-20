@@ -1,0 +1,48 @@
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, Image } from 'react-native';
+import PropTypes from 'prop-types';
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: '#48BBEC',
+        paddingBottom: 10
+    },
+    image: {
+        height: 125,
+        width: 125,
+        borderRadius: 65,
+        marginTop: 10,
+        alignSelf: 'center'
+    },
+    handle: {
+        alignSelf: 'center',
+        fontSize: 16,
+        color: 'white'
+    },
+    name: {
+        alignSelf: 'center',
+        fontSize: 21,
+        marginTop: 10,
+        marginBottom: 5,
+        color: 'white'
+    }
+})
+
+class Badge extends Component {
+    render() {
+        return (
+            <View style={styles.container}>
+                <Image source={{url: this.props.userInfo.avatar_url}} 
+                    style={styles.image} />
+                <Text style={styles.name}> {this.props.userInfo.name} </Text>
+                <Text style={styles.handle}> {this.props.userInfo.login} </Text>
+            </View>
+        );
+    }
+}
+
+Badge.propTypes = {
+    userInfo: PropTypes.object.isRequired
+}
+
+export default Badge;
