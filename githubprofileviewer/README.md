@@ -1,11 +1,25 @@
 # github-profile-viewer
 React Native App to Search and View Github profiles, repositories and take notes
-#React Native Installation: https://facebook.github.io/react-native/docs/getting-started.html
 
-#Start App :
+## React Native Installation: https://facebook.github.io/react-native/docs/getting-started.html
 
-> react-native init githubprofileviewer
+Install Xcode
 
->react-native run-ios
+Install Homebrew [brew](https://brew.sh/)
 
->react-native run-android
+## Create App
+
+```bash
+$ react-native init githubprofileviewer
+```
+## Project Installs
+```bash
+$ npm install
+$ npm start
+```
+
+## Run App
+```bash
+$ react-native run-ios
+$ react-native run-android
+```
